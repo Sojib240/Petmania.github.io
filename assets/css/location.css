@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    background-color: #fbfbfb;
+}
+.container {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    font-size: 56px;
+    line-height: 56px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+}
+p {
+    font-size: 14px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+span {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.mon-fri {
+    margin-top: 10px;
+}
+/* header */
+header {
+    background-color: #fbfbfb !important;
+}
+/* hero */
+.hero {
+    margin-top: 120px;
+}
+.hero .title {
+    margin-bottom: 90px;
+}
+iframe {
+    width: 100%;
+    border-radius: 15px;
+}
+/* second */
+section.second {
+    margin: 80px 0;
+}
+.second .container {
+    max-width: 1100px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.row {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 50px;
+}
+.second-row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-row3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-row4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i.fa-solid.fa-phone {
+    color: #ffd100;
+    font-size: 20px;
+    margin-right: 10px;
+}
+i.fa-solid.fa-angle-up {
+    transform: rotate(90deg);
+    font-size: 9px;
+}
+i.fa-solid.fa-location-dot {
+    color: #ffd100;
+    margin-right: 15px;
+    font-size: 40px;
+}
+.margin {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .second .container {
+        gap: 30px;
+    }
+    .row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .row1-column1,
+    .row1-column2,
+    .row1-column3,
+    .row2-column1,
+    .row2-column2,
+    .row2-column3,
+    .row3-column1,
+    .row3-column2,
+    .row3-column3,
+    .row4-column1,
+    .row4-column2,
+    .row4-column3 {
+        width: 100%;
+        /* border-bottom: 1px solid red;
+        padding-bottom:10px ;    */
+    }
+}

@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background: #fbfbfb;
+}
+header{
+    background-color: #fbfbfb !important;
+}
+section.faq {
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+.container {
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+    transition: 1s ease;
+}
+.faq-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.faq-right-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.faq-left-column {
+    width: 30%;
+}
+.left-column-content h4 {
+    font-size: 16px;
+    line-height: 36px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+}
+.faq-title h1 {
+    font-size: 56px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.faq-title {
+    margin-bottom: 90px;
+}
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.accordion-item {
+    color: #111;
+    margin: 1rem 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+}
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    border-top: 1px solid;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+}
+.sub-title {
+    /* margin-bottom: 40px; */
+    padding: 0.5rem 3rem 1rem 1rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.sub-title h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+}
+
+/* .left-column-content {
+    position: fixed;
+} */
+
+@media (max-width: 768px) {
+    .faq-row {
+        flex-wrap: wrap;
+    }
+    .faq-left-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .faq-right-column {
+        width: 100%;
+    }
+    .left-column-content {
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem 3rem 0.5rem 1rem;
+    }
+    .faq-title {
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem 3rem 3rem 1rem;
+    }
+    .faq-title h1 {
+        font-size: 42px;
+        text-align: left;
+    }
+}

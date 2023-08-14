@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #fbfbfb !important;
+}
+.btn1 {
+    height: 45px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.btn1:hover {
+    background-color: #ffd100;
+    color: #000;
+}
+.btn2 {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn2:hover {
+    border: 2px solid #000 !important;
+    background: none;
+    color: #000;
+}
+body{
+    background: #fbfbfb;
+}
+h1 {
+    font-size: 56px;
+    line-height: 56px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+h4 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    /* text-align: center; */
+}
+h5 {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+}
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+.title {
+    margin-bottom: 40px;
+}
+/* hero */
+section.hero {
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+.hero-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.hero-content2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 70px;
+}
+/* second */
+section.second {
+    margin-bottom: 120px;
+}
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #f0f0f0;
+}
+.second-left-column {
+    width: 60%;
+    padding: 0 50px 0 0;
+}
+.second-right-column {
+    width: 40%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input[type="text"] {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    /* background: red; */
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+input[type="comment"] {
+    width: 100%;
+    height: 110px;
+    outline: none;
+    /* background: red; */
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+input::placeholder {
+    color: #000;
+    font-size: 14px;
+    padding-left: 10px;
+}
+@media (max-width:992px) {
+    .second-left-column {
+        width: 50%;
+    }
+    .second-right-column {
+        width: 50%;
+    }
+}
+@media (max-width:768px) {
+    /* second */
+    .second-row {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .second-left-column {
+        width: 100%;
+    }
+    .second-right-column {
+        width: 100%;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 38px;
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+    /* hero */
+    .hero-content2 {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+        gap: 70px;
+    }
+    .hero-content2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-row {
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+@media (max-width:576px) {
+    .second-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        padding: 0;
+        border-radius: 20px;
+    }
+}

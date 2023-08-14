@@ -1,0 +1,73 @@
+/* font-family: 'Fredoka', sans-serif; 
+        font-family: "Readex Pro", sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    background: #fbfbfb;
+}
+h1 {
+    font-size: 56px;
+    line-height: 56px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+}
+header{
+    background-color: #fbfbfb !important;
+}
+.terms-of-use{
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+.terms-of-use-title{
+    margin-bottom: 90px;
+}
+.terms-of-use .container{
+    max-width: 920px;
+    width: 95%;
+    margin: auto;
+}
+.terms-of-use-row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contents {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 40px 0;
+}
+.content2{
+    border: none !important;
+}
+
+
+
+@media (max-width:768px) {
+    .terms-of-use-title{
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 46px;
+        text-align: left;
+    }
+}

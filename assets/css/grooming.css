@@ -1,0 +1,445 @@
+* {
+    /* font-family: "Fredoka", sans-serif;
+    font-family: "Readex Pro", sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fbfbfb;
+}
+.btn1 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffd100;
+    color: #000;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.btn1:hover {
+    background-color: #000;
+    color: #fff;
+}
+h2 {
+    font-size: 30px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+h6 {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+p {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+i.fa-solid.fa-paw {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+/* hero */
+.hero {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.hero .container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.holder::-webkit-scrollbar {
+    display: none;
+}
+
+.slides {
+    display: none;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.slides img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.column {
+    width: 120px;
+    padding: 12px;
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.column img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hero-row {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-left-column {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.hero-right-column {
+    width: 50%;
+    padding: 0 50px 50px 50px;
+}
+.hero .form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right-column-content1 {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+}
+.right-column-content2 {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+}
+.right-column-content3 {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    border-radius: 20px;
+}
+
+i.fa-solid.fa-heart {
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+.btnA {
+    width: 80%;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    outline: none;
+    padding: 10px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #000;
+}
+label {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    gap: 30px;
+}
+span.one {
+    font-size: 20px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    border: 2px solid #000;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+/* according */
+.accordion {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.accordion-item {
+    color: #111;
+    margin: 1rem 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 29px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+}
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    border-top: 1px solid;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+}
+.bold {
+    font-size: 16px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* second */
+.second {
+    margin-bottom: 90px;
+}
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .right-column-image img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.second-right-column {
+    width: 50%;
+}
+.second-left-column {
+    width: 50%;
+}
+
+.left-column-content {
+    padding: 50px;
+}
+/* third */
+.third {
+    margin-bottom: 90px;
+}
+.third .title {
+    padding-left: 20px;
+}
+.third-row {
+    display: flex;
+    justify-content: space-between;
+}
+.third .card-image img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.third .card {
+    margin: 15px 0;
+    background: red;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    flex-basis: 22.5%;
+}
+.third .card-content {
+    position: relative;
+    padding: 20px 10px 20px 0;
+    overflow: hidden;
+}
+.third p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.card-image {
+    position: relative;
+}
+i.fa-regular.fa-heart {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+i.fa-regular.fa-heart:hover {
+    color: #ffd100;
+}
+.third-add {
+    display: flex;
+    justify-content: flex-end;
+}
+i.fa-solid.fa-plus {
+    position: absolute;
+    font-size: 12px;
+    bottom: -35px;
+    right: 0;
+    color: #fff;
+    background: #000;
+    padding: 8px;
+    border-radius: 25px 25px 25px 0px;
+    transition: 0.3s;
+}
+.third .card:hover i.fa-solid.fa-plus {
+    bottom: 0px;
+}
+i.fa-solid.fa-plus:hover {
+    color: #000;
+    background: #ffd100;
+}
+/* responsive */
+@media (max-width: 1024px) {
+    /* third */
+    .third-row {
+        flex-wrap: wrap;
+    }
+    .third .card {
+        flex-basis: 31%;
+    }
+}
+@media (max-width: 992px) {
+    /* hero */
+    .hero-row {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .hero-left-column {
+        width: 100%;
+    }
+    .hero-right-column {
+        width: 100%;
+        padding: 0;
+    }
+    .column {
+        width: auto;
+    }
+    .hero .row {
+        width: 20%;
+    }
+    /* second */
+    .second .right-column-image img {
+        height: 48vh;
+    }
+    /* third */
+    /* .third-row {
+        flex-wrap: wrap;
+    }
+    .third .card {
+        flex-basis: 31%;
+    } */
+}
+@media (max-width: 768px) {
+    /* hero */
+    .hero-left-column {
+        flex-wrap: wrap-reverse;
+    }
+    .hero .row {
+        width: 100%;
+        flex-direction: row;
+    }
+    /* second */
+    .second-row {
+        flex-wrap: wrap-reverse;
+    }
+    .second-left-column {
+        width: 100%;
+    }
+    .second-right-column {
+        width: 100%;
+    }
+    .second .right-column-image img {
+        height: auto;
+    }
+    .left-column-content {
+        padding: 50px 10px;
+    }
+    /* third */
+    .third .card {
+        flex-basis: 48%;
+    }
+    p {
+        font-size: 15px !important;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}
+@media  (max-width:576px){
+    .third .card {
+        padding: 12px 12px 10px 12px;
+    }
+    i.fa-solid.fa-plus {
+        font-size: 7px;
+        padding: 7px;
+    }
+    i.fa-regular.fa-heart {
+        top: -10px;
+        right: -10px;
+        padding: 7px;
+        font-size: 10px
+    }
+}
